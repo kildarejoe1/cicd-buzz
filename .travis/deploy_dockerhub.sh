@@ -1,6 +1,6 @@
 #!/bin/sh
 
-docker login  -u $DOCKER_USER -p $DOCKER_PASS  https://index.docker.io
+docker login  -u $DOCKER_USER -p $DOCKER_PASS  
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
 
