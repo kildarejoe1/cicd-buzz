@@ -2,6 +2,8 @@ from __future__ import print_function
 
 import random
 
+#This is a sample application to illustrate CI/CD pipeline
+
 
 
 buzz = ('continuous testing', 'continuous integration',
