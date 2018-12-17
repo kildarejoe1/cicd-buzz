@@ -24,7 +24,7 @@ def generate_buzz():
 
     page += generator.generate_buzz()
 
-    page += '</h1></body></html>'
+    page += '</h1></body><p>Heroku App</html>'
 
     return page
 
