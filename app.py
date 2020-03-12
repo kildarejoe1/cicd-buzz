@@ -8,8 +8,8 @@ app = Flask(__name__)
 def home():
     return "Hello World!!!"
 
-@app.route("/user")
-def user(user):
+@app.route("/<user>")
+def user_home(user):
     return "Hello User: %s " % user
 
 
