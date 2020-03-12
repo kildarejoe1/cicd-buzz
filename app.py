@@ -1,24 +1,16 @@
 import os
 
-import signal
-
 from flask import Flask
 
-import generator
-
-
-
 app = Flask(__name__)
-
-
-
-signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
-
-
 
 @app.route("/")
 def home():
     return "Hello World!!!"
+
+@app.route("/user")
+def user(user):
+    return "Hello User: %s " % user
 
 
 
