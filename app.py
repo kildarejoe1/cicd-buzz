@@ -12,7 +12,9 @@ def home():
 def user_home(user):
     return "Hello User: %s " % user
 
-
+@app.route("/test")
+def test():
+    return "This is a test " 
 
 if __name__ == "__main__":
 
